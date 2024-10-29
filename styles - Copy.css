@@ -1,0 +1,101 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    color: #00796b;
+    margin-bottom: 20px;
+}
+
+#instructions {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Game Layout */
+.game-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Steps List */
+#steps {
+    width: 200px;
+}
+
+.step {
+    padding: 15px;
+    background-color: #e0f7fa; /* Light blue for steps */
+    border: 1px solid #00838f;
+    border-radius: 8px;
+    margin: 10px 0;
+    cursor: pointer; /* Indicates clickable */
+    font-size: 1.1em;
+    color: #004d40;
+    transition: transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.step:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Drop Area */
+#sequence {
+    width: 200px;
+}
+
+.drop-area {
+    min-height: 200px;
+    padding: 10px;
+    border: 2px dashed #b0bec5;
+    border-radius: 8px;
+    background-color: #eceff1;
+}
+
+#messageBox {
+    margin-top: 20px;
+    font-size: 1.1em;
+    color: #00796b;
+}
+
+/* Popup Styling */
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    font-size: 1em;
+    color: #333;
+    text-align: center;
+    z-index: 10;
+}
+
+.popup:after {
+    content: 'Click anywhere outside this box to close';
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #777;
+}
